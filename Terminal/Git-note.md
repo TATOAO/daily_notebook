@@ -1,4 +1,4 @@
-# Github commant note
+t # Github commant note
 
 
 ## Branch
@@ -28,7 +28,15 @@ git remote -v
 
 # can set up using this line
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+
+# git add remote and give it a name
+git remote add github https://github.com/TATOAO/daily_notebook.git
+
+# first time push to define the remote (require login )
+git push --set-upstream github master
 ```
+
+
 
 ## Test jekyll locally
 ```bash
