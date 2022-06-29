@@ -21,6 +21,9 @@ git push -u origin the_branch
 ```
 
 
+### get remote info but not pull, including branches 
+git fetch **remote name**
+
 ## Change remote url
 ```bash
 # this is for checking 
@@ -34,6 +37,28 @@ git remote add github https://github.com/TATOAO/daily_notebook.git
 
 # first time push to define the remote (require login )
 git push --set-upstream github master
+```
+
+
+
+
+## Branch
+
+#### Merge
+``` bash
+# merge the current branch to the target 
+git merge github/main --allow-unrelated-histories
+
+```
+
+
+#### Delete Branch
+``` bash
+# local delete
+git branch -d fix/authentication
+
+git push origin --delete fix/authentication
+
 ```
 
 

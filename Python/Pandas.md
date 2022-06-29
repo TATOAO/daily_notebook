@@ -19,4 +19,17 @@ df = pd.concat([df, pd.dummies(df[['renew', 'hprice_cn']])], axis=1)
 
 ```
 
+## Query
+
+#### Any 只要一列
+
+df[df.isna().any(axis=1)]
+df[df.isin([25]).any(axis=1)]
+
+
+# config
+
+## display 
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
 
