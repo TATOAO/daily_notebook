@@ -26,61 +26,6 @@ Set()
 
 ```
 
-题目： Let, Const, Var 的区别
-
-- Var
-变量提升： 就是如果
-
-```js
-console.log(a)
-var a = 10;
-```
-是不会报错的,只会log undefined, 如果是let const,就会报错
-
-块级作用域
-
-还有就是 window.a 就可以取到值
-
-不能重复声明
-
-
-题目： ES6 对object 有什么优化更新
-
-1. 声明的方式一个简化：
-```js
-
-let a = 'alan';
-let b = 'blan';
-let c = {a, b};
-
-// c = {a: 'alan', b: 'blan'}
-
-```
-2. 解构赋值
-let {a,b,c} = obj;
-
-
-更新的部分：
-object.is 
-object.assign
-getOwnPerpertyDescriptors
-getPrototypeOf
-keys
-values
-
-
-如果用变量来取属性
-
-就是 比如 obj.name = 'alan'
-
-但是 let a = 'name'
-
-obj[a] 就可以取到
-
-
-
-
-
 ## JS  类 构造函数
 
 原型空间
