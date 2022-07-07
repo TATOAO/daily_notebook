@@ -1,20 +1,4 @@
 
-# 中文乱码问题
-``` py
-
-#### Windows
-import matplotlib
-matplotlib.rcParams['font.sans-serif'] = ['SimHei']
-matplotlib.rcParams['font.family']='sans-serif'
-
-
-
-#### MacOS
-import matplotlib.pyplot as plt
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
-
-```
-
 # bar plot
 
 
@@ -28,4 +12,12 @@ ax = df.sort_values('count',ascending=False).set_index("intent").plot(kind='bar'
 
 ax.set_xlabel("intents")
 ax.set_ylabel("Frequency")
+```
+
+
+### bar count plot 
+
+.value_counts()
+``` py
+stack_df['用户意图2'].value_counts().sort_values(ascending=False).plot(kind = 'bar')
 ```

@@ -44,9 +44,10 @@ df[df.isna().any(axis=1)]
 df[df.isin([25]).any(axis=1)]
 
 
-# config
 
-## display 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-
+## duplicate
+keep{‘first’, ‘last’, False}, default ‘first’
+Determines which duplicates (if any) to mark.
+first : Mark duplicates as True except for the first occurrence.
+last : Mark duplicates as True except for the last occurrence.
+False : Mark all duplicates as True.

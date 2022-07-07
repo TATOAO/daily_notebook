@@ -25,7 +25,13 @@ conda env update --file local.yml
 
 检查现在有什么包：
 
-```bash
+``` bash
 conda list
 ```
 
+
+检查现在有什么环境：
+``` bash
+conda env list
+
+```
