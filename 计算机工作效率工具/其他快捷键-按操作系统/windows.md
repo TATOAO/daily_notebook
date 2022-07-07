@@ -1,0 +1,1 @@
+https://www.w3.org/Amaya/User/doc/ShortCuts-Windows.html
