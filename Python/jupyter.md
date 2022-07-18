@@ -26,3 +26,16 @@ z   -   撤销删除cell
 x   -   cut
 v   -   paste
 c   -   copy
+
+
+#### jupyter import module， model更新不同步问题
+
+```py
+
+import importlib
+correct = importlib.import_module('correct') 
+importlib.reload(correct)
+
+## correct.user_replace_table
+
+```

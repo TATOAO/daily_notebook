@@ -30,24 +30,6 @@ df = pd.concat([df, pd.dummies(df[['renew', 'hprice_cn']])], axis=1)
 
 
 
-### str type Query
-
-``` py
-# .len()
-df[df['aaa'].str.len()]
-
-```
-
-
-
-### regular expression
-
-``` py
-
-df[df['ent-id'].str.match("ent-\d+") == False]
-
-``` 
-
 #### Any 只要一列
 
 df[df.isna().any(axis=1)]
