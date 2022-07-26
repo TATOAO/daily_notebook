@@ -39,3 +39,8 @@ importlib.reload(correct)
 ## correct.user_replace_table
 
 ```
+
+
+#### magic function
+
+https://ipython.readthedocs.io/en/stable/interactive/python-ipython-diff.html

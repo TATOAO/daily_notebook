@@ -27,3 +27,7 @@ dir * /b | findstr "^2"  > log.txt
 findstr "^[a-z]"
 但是这个[]是有问题的，[a-A] 只有 aA。
 
+## explore
+
+start .
+用explore 打开当前文件夹

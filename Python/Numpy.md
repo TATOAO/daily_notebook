@@ -1,7 +1,25 @@
 
 # array
 
-支持query
+### 创建
+
+
+##### np.concatenate
+###### hstack
+``` py
+# by nested array
+
+# array([list(['问候', '提供信息']), list(['被动确认']), list(['客套']), ...,
+#        list(['客套']), list(['客套']), list(['再见'])], dtype=object)
+
+np.concatenate(df['用户意图list_clean'].values)
+np.hstack(df['用户意图list_clean'].values)
+
+```
+
+
+
+### 支持query
 
 ```py
 import numpy as np
