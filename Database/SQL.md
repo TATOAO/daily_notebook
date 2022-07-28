@@ -662,9 +662,6 @@ WHERE
 这能才能把想要的避开。Group By 还有一个问题,就是她可能会选出不想要的Id,就是把Id 小的先给去掉了,可能会造成表格的不连续。
 
 
-#### 特殊函数
-
-COALESCE 取第一个非NULL 元素。
 
 
 
@@ -748,60 +745,5 @@ CALL myproc();
 #### Window Functions & Over
 
 
-
-
-
-### 账户管理
-
-新安装在ubuntu 的 sudo apt-get install mysql-server
-
-root 账户是不需要密码的,但是需要在ubuntu sudo才能access,
-
-sudo mysql -u root
-
-之后我们需要改密码：
-
-```sql
-ALTER USER 'user-name'@'localhost' IDENTIFIED BY 'NEW_USER_PASSWORD';
-FLUSH PRIVILEGES;
-```
-
-hmmm 好像改了之后, 还是sudo 不需要密码也能进去
-
-关掉重启
-```bash
-sudo mysqladmin -u root shutdown
-
-sudo /etc/init.d/mysql start
-# 或者 
-sudo service mysql start
-
-sudo service mysql restart
-```
-
-
-
-
-### SQL 是怎么运作的
-
-
-
-
- 
-##### MapReduce
-
-我们先理解一下 MapReduce, 
-
-几个基础的概念和名词需要先记住：
-
-1.首先 JobClient 是用户的终端, 发送一个 Job 的Jar 包 __(作业包)__ 到每个DataNode, (__数据节点)
-
-2.然后把作业提到 JobTracker 服务器, 然后进入
-
-
-##### 数据倾斜 (Hive)
-
-
-首先要理解 Map -> Reduce 在sql 里的运作机制
 
 

@@ -10,6 +10,7 @@ grouped.get_group("game_name")
 ```
 
 
+
 # groupby agg 单列数据
 ``` py
 df.groupby('id')['是客服先说'].agg(lambda x: any(x)).value_counts() / 8975
