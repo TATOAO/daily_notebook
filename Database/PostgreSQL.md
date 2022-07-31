@@ -1,3 +1,6 @@
+
+inside PostgreSQL terminal 
+
 # show databases
 
 \l

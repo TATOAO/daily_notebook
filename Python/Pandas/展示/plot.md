@@ -21,3 +21,28 @@ ax.set_ylabel("Frequency")
 ``` py
 stack_df['用户意图2'].value_counts().sort_values(ascending=False).plot(kind = 'bar')
 ```
+
+kindstr
+The kind of plot to produce:
+
+‘line’ : line plot (default)
+
+‘bar’ : vertical bar plot
+
+‘barh’ : horizontal bar plot
+
+‘hist’ : histogram
+
+‘box’ : boxplot
+
+‘kde’ : Kernel Density Estimation plot
+
+‘density’ : same as ‘kde’
+
+‘area’ : area plot
+
+‘pie’ : pie plot
+
+‘scatter’ : scatter plot (DataFrame only)
+
+‘hexbin’ : hexbin plot (DataFrame only)
