@@ -1,4 +1,4 @@
 ``` py
-from matplotlib.pyplot import plt 
+import matplotlib.pyplot as plt 
 
 ```

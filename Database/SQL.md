@@ -1,12 +1,5 @@
 # 题目
 
-
-##### 命令行小技巧
-```bash
-\! clear
-```
-加感叹号就可以用到bash/zsh的命令,清理屏幕
-
 ### Define Database
 
 ##### 创造Database
@@ -19,29 +12,6 @@
 DESCRIBE student;
 ```
 
-
-
-### 处理数据
-
-
-## Relation Ship ( Foreign key)
-
-```sql
-CREATE TABLE branch(
-	branch_id INT PRIMARY KEY,
-	mgr_id, INT,
-FORIGHN KEY(mgr_id) REFERENCES employee(emp_id) ON DELETE SET NULL
-);
-
-
-ALTER TABLE xxx
-ADD FOREIGN KEY(sss)
-REFERENCES client(client_id) ON DELTE CASCADE;
-```
-ON DELETE CASCADE  删除的时候相关的数据 (那一行) 会直接没掉
-ON DELETE SET NULL 删除的时候相关的数据会变成null
-
-首先 建立relationship 之前, 相关的key 一定要已经存在。 并且一个联系一定是双方的。a map to b, b map to a 两边都要写
 
 
 
