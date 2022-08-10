@@ -277,3 +277,15 @@ m 打开菜单, 然后 a 增加child
 
 # 每行插入
 Vim 每行插入。  Control + i, 大写 i ， esc
+
+
+
+# 移动view 不移动光标
+
+Ctrl + y        上一行
+Ctrl + e        下一行
+
+Ctrl + b        上一页
+Ctrl + f        下一页
+
+
