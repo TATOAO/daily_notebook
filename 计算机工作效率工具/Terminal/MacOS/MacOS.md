@@ -6,3 +6,6 @@ long time: in terminal
 ``` bash
 defaults write com.apple.Finder AppleShowAllFiles true 
 ```
+
+
+
