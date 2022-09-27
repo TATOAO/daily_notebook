@@ -4,3 +4,5 @@
 ,	While the video is paused, go back to the previous frame.
 >	Speed up the video playback rate.
 <	Slow down the video playback rate.
+
+https://support.google.com/youtube/answer/7631406?hl=en
