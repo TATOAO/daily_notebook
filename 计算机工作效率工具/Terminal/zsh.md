@@ -17,3 +17,15 @@ chsh -s $(which zsh)
       1. oh my zsh
 
 
+
+## powerlevel 10
+
+
+``` bash
+
+# reconfig the setting interactively
+p10 configure
+
+```
+
+
