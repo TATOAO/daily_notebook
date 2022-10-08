@@ -29,3 +29,15 @@ $n      \n                                      Backreferences for previously gr
 
 negative look behind 
 @<!
+
+
+## vim search hightlight issue
+
+https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting?page=1&tab=scoredesc#tab-top
+
+``` vim
+
+:noh            # set no highlighting
+:let @/ = ""    # clear the search 
+
+```
