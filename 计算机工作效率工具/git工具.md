@@ -85,8 +85,18 @@ git push origin --delete fix/authentication
 git diff code-origin/main
 
 ```
-中文乱码问题
+
+## git 中文乱码问题
 git diff 其实会调用 less
 ```
 export LESSCHARSET=utf-8
+```
+
+
+git commit 
+
+```
+git config --global i18n.commitencoding utf-8
+git config --global i18n.logoutputencoding utf-8
+git config --global gui.encoding utf-8
 ```
