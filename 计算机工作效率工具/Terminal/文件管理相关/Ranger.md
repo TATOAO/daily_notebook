@@ -18,3 +18,8 @@ t 只是一个标记* 的功能
 
 
 
+### Preview
+
+快捷键 zp
+toggle 打开preview
+
