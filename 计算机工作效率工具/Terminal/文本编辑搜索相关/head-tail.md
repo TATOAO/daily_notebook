@@ -1,6 +1,6 @@
 
 
-# skill a few lines
+# skip a few lines
 
 ``` bash
 $ tail -n +<N+1> <filename>
