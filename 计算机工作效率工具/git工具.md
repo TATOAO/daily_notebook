@@ -100,3 +100,5 @@ git config --global i18n.commitencoding utf-8
 git config --global i18n.logoutputencoding utf-8
 git config --global gui.encoding utf-8
 ```
+
+未解决git commit之后的返回还是乱码问题。
