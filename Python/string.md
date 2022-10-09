@@ -20,6 +20,7 @@
 "More {!a}"                      # Calls ascii() on the argument first
 
 
+python format
 正负号
 '{:+f}; {:+f}'.format(3.14, -3.14)  # show it always
 # +3.14 ; -3.14
@@ -49,3 +50,7 @@ Dcab       ==>       7678
 """
 
 ```
+
+## percentage 百分号
+
+ with "{:. 0%}" as str to format the number as a percentage. To include a specific number of decimal places, use "{:. n%}" 
