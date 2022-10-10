@@ -62,8 +62,9 @@ git push --set-upstream github master
 ``` bash
 # merge the current branch to the target 
 git merge github/main --allow-unrelated-histories
-
 ```
+
+
 
 
 #### Delete Branch
@@ -76,6 +77,13 @@ git push origin --delete fix/authentication
 ```
 
 ## Push remote
+
+``` 
+
+git push origin lwt: master
+
+```
+冒号define 要从哪个branch push 到哪个branch
 
 
 ## git diff
@@ -101,4 +109,29 @@ git config --global i18n.logoutputencoding utf-8
 git config --global gui.encoding utf-8
 ```
 
+
 未解决git commit之后的返回还是乱码问题。
+
+
+## cherry-pick
+
+先git log 获取到对应的commit 的id
+
+从 branch b pick branch a 的commit
+```
+git cherry-pick #commit-id#
+
+```
+
+
+## git fetch / git pull
+
+```
+git fetch 
+git log # 找到对应的新分支的id
+git merge # id 
+
+
+git pull 
+
+```
