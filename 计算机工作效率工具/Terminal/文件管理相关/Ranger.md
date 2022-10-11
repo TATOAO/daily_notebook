@@ -48,9 +48,22 @@ https://unix.stackexchange.com/questions/367452/how-to-change-the-default-text-e
 
 https://github.com/CallumHoward/dotfiles/blob/master/.config/ranger/scope.sh
 
+use glow 
+
 ## reload config
 
 https://unix.stackexchange.com/questions/107159/how-to-refresh-or-reload-rc-conf-in-ranger-file-manager
 
 
+### preview scroll 
+```
+map <A-j> scroll_preview 1
+map <A-k> scroll_preview -1
+
+# Preview movement
+# ∆ = Option + j
+map ∆ scroll_preview 1
+# ˚ = Option + k
+map ˚ scroll_preview -1
+```
 
