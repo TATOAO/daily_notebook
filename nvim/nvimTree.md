@@ -54,9 +54,12 @@ S
 
 ### mkdir/ touch 
 
-create
 ```
-a
+a       # craete
+c       # copy the file
+y       # copy the name
+Y       # copy the filepath
+p       # paste the file
 
 ```
 https://github.com/kyazdani42/nvim-tree.lua
