@@ -170,7 +170,7 @@ qq 是 macros 宏 记录 开始 recood。左下角会显示 recording。 <br>
 "x (指定register符) y (yank)
 
 ###### 时刻监控 register！
-[怎么在 dash 里循环跑一个command](https://stackoverflow.com/questions/9574089/osx-bash-watch-command ":)")
+[怎么在 bash 里循环跑一个command](https://stackoverflow.com/questions/9574089/osx-bash-watch-command ":)")
 
 [Always show the register list in Vim](https://superuser.com/questions/656949/always-show-the-register-list-in-vim ":)")
 
