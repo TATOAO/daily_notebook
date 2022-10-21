@@ -26,6 +26,17 @@ done
 很方便的把当前文件夹的所有mkv 转成了mp4, 又快又好！
 
 
+要确认；的用法，不能随便加？
+``` bash
+for OUTPUT in $(Linux-Or-Unix-Command-Here)
+do
+    command1 on $OUTPUT
+    command2 on $OUTPUT
+    commandN
+done
+```
+
+
 
 
 

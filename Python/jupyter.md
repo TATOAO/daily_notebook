@@ -44,3 +44,12 @@ importlib.reload(correct)
 #### magic function
 
 https://ipython.readthedocs.io/en/stable/interactive/python-ipython-diff.html
+
+
+
+
+### jupyter notebook convert to py
+
+```
+jupyter nbconvert --to script *.ipynb
+```
