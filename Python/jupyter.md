@@ -52,4 +52,21 @@ https://ipython.readthedocs.io/en/stable/interactive/python-ipython-diff.html
 
 ```
 jupyter nbconvert --to script *.ipynb
+
+jupyter nbconvert --to html --stdout *.ipynb
+jupyter nbconvert --to script --stdout *.ipynb
+```
+
+
+### defined variables
+
+https://stackoverflow.com/questions/633127/viewing-all-defined-variables
+
+```
+dir()
+globals()
+locals()
+
+$who
+
 ```
