@@ -50,6 +50,10 @@ CTRL+c CTRL+c   -   close the command buffer
 gg=G            -   Format HTML. Make sure FileType is set to html with :setf html
 CTRL+n          -   Press after typing part of a word. It scrolls down the list of all previously used words
 CTRL+p          -   Press after typing part of a word. It scrolls up the list of all previously used words
+CTRL+e          -   clear previous type list
+
+
+## Single Normal Mode
 
 
 ## Insert Mode
@@ -62,8 +66,17 @@ CTRL + D		-	Make the whole line unindent
 CTRL + P		-	Use the previous typed word to complete (up)
 CTRL + N		-	Use the previous typed word to complete (down)
 
+CTRL + A        -   Type the the text you typed the last time you were in insert mode.
+CTRL + U        -   Delte the whole line
+
+CTRL + O		-	single normal mode
 
 
+CTRL + X		-	X mode 
+CTRL + X + CTRL + L		- X mode table for previous line
 
 
+CTRL + V		- Insert Special Characters
+CTRL + K		- Inset Two Key Speicial Characters
 
+[Reference Web 1 learnbyexampe](https://learnbyexample.github.io/vim_reference/Insert-mode.html ":)")

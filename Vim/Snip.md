@@ -13,6 +13,7 @@ control + b 下一个
 control + z 上一个 
 这些都是能在vimrc里设的
 
+
 ## Snippet 信标机制
 (这是我取得名字)
 

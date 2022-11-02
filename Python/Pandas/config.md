@@ -9,6 +9,13 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_colwidth', None)
 
 
+## float展示格式，展示成百分比
+
+
+You could also set the default format for float :
+
+pd.options.display.float_format = '{:.2%}'.format
+
 
 
 # 中文乱码问题
