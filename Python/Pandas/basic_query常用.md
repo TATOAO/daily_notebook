@@ -20,4 +20,6 @@ df = pd.concat([df, pd.dummies(df[['renew', 'hprice_cn']])], axis=1)
 df[df.isna().any(axis=1)]
 df[df.isin([25]).any(axis=1)]
 
+找到有null的columns name
+df.columns[df.isna().any()].tolist()
 
