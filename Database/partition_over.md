@@ -6,6 +6,7 @@
 
 
 ```sql
+-- hive sql
 
 select 
 
