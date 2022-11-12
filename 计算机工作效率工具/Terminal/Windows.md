@@ -6,7 +6,7 @@ ls      : dir                       :/b 只放名字
 rm      : Del / rmdir
 wc      : find /c ":"
 grep    : findstr
-
+clear	: cls
 
 
 

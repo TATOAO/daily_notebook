@@ -32,12 +32,10 @@ def read_csv_pgbar(csv_path, chunksize = 10000, filter_query="", **args):
 	return df
 ```
 
-
 ## excel
 
 excel not allows chunksize, it is not  a line structure file,
 
-https://stackoverflow.com/questions/44764892/is-there-a-chunksize-argument-for-read-excel-in-pandas
-
+[Link](https://stackoverflow.com/questions/44764892/is-there-a-chunksize-argument-for-read-excel-in-pandas ":)")
 
 

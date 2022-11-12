@@ -4,8 +4,6 @@
 
 [Git 上可以参考的snip script](https://github.com/honza/vim-snippets/blob/master/UltiSnips/all.snippets ":)")
 
-Snip 有自动填充的功能的 Control + N 就会自动弹出来啦
-
 
 ## 跳动自动填充位置。Triggor
 
