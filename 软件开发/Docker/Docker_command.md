@@ -1,4 +1,36 @@
 
+
+# Docker create and start vs Docker run
+
+[Link]( ":)")
+
+```bash
+
+docker container create -i -t --name mycontainer alpine
+# 6d8af538ec541dd581ebc2a24153a28329acb5268abe5ef868c1f1a261221752
+docker container start --attach -i mycontainer
+# echo hello world
+hello world
+
+
+# equal to 
+
+docker run -it --name mycontainer2 alpine
+/ # echo hello world
+hello world
+```
+
+# Docker copy
+
+
+[stackoverflow copy thing into container](https://stackoverflow.com/questions/22907231/how-to-copy-files-from-host-to-docker-container ":)")
+
+```
+
+docker cp foo.txt container_id:/foo.txt
+
+```
+
 # Docker Run shit
 
 
