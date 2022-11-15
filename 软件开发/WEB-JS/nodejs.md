@@ -20,3 +20,21 @@ When using any of the above options to save dependencies to your package.json, t
 
 ## TTY text terminal 
 
+TTY means a pesdo terminal
+
+
+
+
+## node install 
+
+### install in linux
+
+[offitial](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions ":)")
+
+
+[Stackoverflow](https://stackoverflow.com/questions/36399848/install-node-in-dockerfile ":)")
+
+
+
+
+
