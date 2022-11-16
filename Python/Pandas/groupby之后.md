@@ -16,6 +16,10 @@ grouped.get_group("game_name")
 df.groupby('id')['是客服先说'].agg(lambda x: any(x)).value_counts() / 8975
 ```
 
+## unique count
+
+df.groupby('date').nunique()
+
 
 # groupby agg 多个单列数据
 

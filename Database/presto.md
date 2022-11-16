@@ -43,3 +43,25 @@ typeof() -- presto
 -- sql 没有 typeof 函数？
 
 ```
+
+
+#### set variable
+
+not able to set variable in presto
+
+
+### date time and var
+
+!! presto 双引号和单引号是不同的，一般表示varchar都是用的单引号
+
+``` sql
+select date_parse('7/22/2016 6:05:04 PM','%m/%d/%Y %h:%i:%s %p')
+```
+
+compare
+
+```sql
+
+from date_parse(stat_dt, '%Y-%m-%d') >= date '2022-10-10'
+
+```
