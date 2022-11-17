@@ -169,6 +169,8 @@ qq 是 macros 宏 记录 开始 recood。左下角会显示 recording。 <br>
 先 用 v 选中 你要的string 然后 按 "x y 就可以把想要的string regitser 到 x 啦！
 "x (指定register符) y (yank)
 
+mac 复制到clipboar的register 是+
+
 ###### 时刻监控 register！
 [怎么在 bash 里循环跑一个command](https://stackoverflow.com/questions/9574089/osx-bash-watch-command ":)")
 
