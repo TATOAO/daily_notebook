@@ -23,25 +23,15 @@ _ = display.ax_.set_title("2-class Precision-Recall curve")
 
 ```
 
-#### ROC AUC 曲线
-两个区别
-https://www.biostat.wisc.edu/~page/rocpr.pdf
 
+## metric
 
+#### roc auc
 
+``` py
 
-## F1
+import sklearn
 
-https://zhuanlan.zhihu.com/p/64315175
+sklearn.metrics.roc_auc_score(true_y, prod_y)
 
-
-Micro F1   
-整体的F1，
-
-
-Macro F1   
-就是每个分类的 F1， 然后平均起来
-
-
-
-
+```
