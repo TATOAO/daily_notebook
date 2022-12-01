@@ -34,4 +34,38 @@ import sklearn
 
 sklearn.metrics.roc_auc_score(true_y, prod_y)
 
+
+display = metrics.plot_roc_curve(model, dataX, dataY)
+_ = display.ax.set_title(taskname)
+
+plt.savefig('plotname.png')
+
 ```
+
+#### ROC 多个 roc曲线画在一起
+
+```py
+
+from sklearn import metrics
+import numpy as np
+import matplotlib.pyplot as plt
+
+plt.figure(0).clf()
+
+pred = np.random.rand(1000)
+label = np.random.randint(2, size=1000)
+fpr, tpr, thresh = metrics.roc_curve(label, pred)
+auc = metrics.roc_auc_score(label, pred)
+plt.plot(fpr,tpr,label="data 1, auc="+str(auc))
+
+pred = np.random.rand(1000)
+label = np.random.randint(2, size=1000)
+fpr, tpr, thresh = metrics.roc_curve(label, pred)
+auc = metrics.roc_auc_score(label, pred)
+plt.plot(fpr,tpr,label="data 2, auc="+str(auc))
+
+plt.legend(loc=0)
+
+```
+[SO](https://stackoverflow.com/questions/42894871/how-to-plot-multiple-roc-curves-in-one-plot-with-legend-and-auc-scores-in-python ":)")
+

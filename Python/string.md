@@ -51,6 +51,13 @@ Dcab       ==>       7678
 
 ```
 
+## 带逗号的format
+
+```py
+'{:,}'.format(value)  
+f'{value:,}'          
+```
+
 ## percentage 百分号
 
  with "{:. 0%}" as str to format the number as a percentage. To include a specific number of decimal places, use "{:. n%}" 
