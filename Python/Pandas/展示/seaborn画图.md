@@ -1,3 +1,10 @@
+# Seaborn 中文乱码问题 
+
+除了配置plt还需要额外配一下，而且需要每次运行画图前都执行一下这个命令？
+```py
+sns.set(font='SimHei', font_scale=0.8)        # 解决Seaborn中文显示问题
+
+```
 
 # seaborn 左右坐标
 

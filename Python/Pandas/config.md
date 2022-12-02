@@ -33,3 +33,31 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
 
 ```
+
+
+## 服务器上的中文乱码问题
+
+关键是怎么把字体文件传上去+怎么配置+清除缓存
+
+[博客](https://www.biaodianfu.com/matplotlib-chinese.html ":)")
+
+```py
+
+import matplotlib as mpl
+print(mpl.matplotlib_fname())
+
+# font.family: sans-serif
+# font.sans-serif:FangSong, Kaiti, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+# axes.unicode_minus: True   ## use unicode for the minus symbol
+                           ## rather than hyphen.  See
+                           ## http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
+
+# rm -rf ~/.cache/matplotlib
+# rm -rf ~/.matplotlib
+
+```
+
+
+
+
+
