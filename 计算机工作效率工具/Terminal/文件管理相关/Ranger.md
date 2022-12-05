@@ -19,7 +19,7 @@ F7 mkdir
 I （大写 i 字头开始 ） a 字尾（后缀前）开始编辑    A 最后的最后
 
 
-t 只是一个标记* 的功能
+t 只是一个标记的功能
 
 空格 v 选中
 
@@ -34,25 +34,30 @@ t 只是一个标记* 的功能
 快捷键 zp
 toggle 打开preview
 
+
+### delete file
+
+dD
+
 ### view 隐藏文件 
 zh
 toggle 打开展示隐藏文件
 
 
 ## change editor 
-https://unix.stackexchange.com/questions/367452/how-to-change-the-default-text-editor-in-ranger
+[StackExchang](https://unix.stackexchange.com/questions/367452/how-to-change-the-default-text-editor-in-ranger ":)")
 
 改成nvim
 
 ## use fancy markdown previewer
 
-https://github.com/CallumHoward/dotfiles/blob/master/.config/ranger/scope.sh
+[github](https://github.com/CallumHoward/dotfiles/blob/master/.config/ranger/scope.sh ":)")
 
 use glow 
 
 ## reload config
 
-https://unix.stackexchange.com/questions/107159/how-to-refresh-or-reload-rc-conf-in-ranger-file-manager
+[StackExchang](https://unix.stackexchange.com/questions/107159/how-to-refresh-or-reload-rc-conf-in-ranger-file-manager ":)")
 
 
 ### preview scroll 
@@ -66,4 +71,7 @@ map ∆ scroll_preview 1
 # ˚ = Option + k
 map ˚ scroll_preview -1
 ```
+
+
+
 
