@@ -1,5 +1,12 @@
 
 
+
+# to Unix time
+
+hive unix_timestamp('2022-12-07')
+会返回null，需要先变成日期的格式，
+unix_timestamp( cast('2022-12-07' as date))
+
 # 日期
 
 
