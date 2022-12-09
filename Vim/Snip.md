@@ -163,3 +163,8 @@ endsnippet
 [有人在git做了 git相关的 snip命令，可以参考一下](https://github.com/mgedmin/dotvim/blob/master/UltiSnips/python.snippets ":)") 
 
 
+
+## Refresh Snip Config 
+
+:call UltiSnips#RefreshSnippets()
+
