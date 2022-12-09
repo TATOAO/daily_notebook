@@ -46,3 +46,6 @@ The kind of plot to produce:
 ‘scatter’ : scatter plot (DataFrame only)
 
 ‘hexbin’ : hexbin plot (DataFrame only)
+
+
+
