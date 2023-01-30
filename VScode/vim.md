@@ -7,7 +7,7 @@
 
  vscode setting.json
 
- "vim.autoSwitchInputMethod.enable": true,
+"vim.autoSwitchInputMethod.enable": true,
 "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
 "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
 "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}"

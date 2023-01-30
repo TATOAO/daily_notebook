@@ -16,6 +16,8 @@
 
 ### 直接调用 JS！ - Graph 
 
+!!! 这个功能不能直接使用，我记得我当年确实是能用起来的，现在可能是因为浏览器协议变了，或者我当时使用的是其他的markdown interpreter，总之现在是没办法直接在markdown里面调用js script. 
+
 [visjs 这个是个非常好的网站，Js + visualization, 这次用的是它的Network](https://visjs.org/ ":)")
 
 直接把下面这一段复制到markdown里，就可以生成下面的Network啦！
@@ -65,18 +67,42 @@
 </script>
 ```
 
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+it is not working ? 
+
+<script type="text/javascript" src="http://localhost:8340/aaa">
+
+</script>
+
+fwf
+
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js">
+
+
+
+console.log('xxxxxwefwofjweofj');
+</script>
 
 <style type="text/css">
+
 #mynetwork {
     width: 600px;
     height: 400px;
     border: 1px solid lightgray;
 }
 </style>
-<div id="mynetwork"></div>
+
+<div id="mynetwork">
+jiwfe
+</div>
+
+
+<
+jwiefj
+jweijfowjef
 
 <script type="text/javascript">
+
+    alert('wwww');
     // create an array with nodes
     var nodes = new vis.DataSet([
         {id: 1, label: 'Node 1'},
@@ -106,6 +132,10 @@
 
     // initialize your network!
     var network = new vis.Network(container, data, options);
+
+	console.log("xxxxxx");
+
+    // container.innerText = "aaaaaaaaaaaa"
 </script>
 
 
