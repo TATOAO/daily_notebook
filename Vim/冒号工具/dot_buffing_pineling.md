@@ -2,6 +2,8 @@
 
 # 在vim execute shell command and bring buffing to editor
 
+[Youtube Vim Tips](https://www.youtube.com/watch?v=dVIP72Uwt2A&list=LL&index=14&t=372s&ab_channel=BenKadel ":)")
+
 加一个英文句号在感叹号前面即可
 : .! ls
 

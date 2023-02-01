@@ -2,4 +2,6 @@
 
 # map node
 
-[blog](https://www.cnblogs.com/sunsky303/p/13522437.html ":)")
+[blog how to change the mapping in vimrc](https://www.cnblogs.com/sunsky303/p/13522437.html ":)")
+
+
