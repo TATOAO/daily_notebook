@@ -40,6 +40,25 @@ In general, you could use @local_variable_name, so something like
 
 [StatckOverflow value](https://stackoverflow.com/questions/26535563/querying-for-nan-and-other-names-in-pandas ":)")
 
+注意这个local variable name 不能用来作为column name 比方说
+
+```py
+
+target_name = "some_column_name"
+df.query("@target_name == 1")
+
+# change to 
+df.query("{} == 1".format(targer_name))
+
+```
+这样会报错，而且提示会让人摸不着头脑，说的什么 int is not iterable
+
+
+
+
+
+
+
 
 
 
