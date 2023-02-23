@@ -35,3 +35,14 @@ conda list
 conda env list
 
 ```
+
+
+
+指定特定的目录 create 环境
+
+[SO](https://stackoverflow.com/questions/37926940/how-to-specify-new-environment-location-for-conda-create ":)")
+
+```bash
+conda create --prefix /tmp/test-env python=2.7
+
+```
