@@ -35,3 +35,6 @@ df.apply(lambda s: pd.to_numeric(s, errors='coerce').notnull().all())
 
 ```
 
+
+# Drop column
+

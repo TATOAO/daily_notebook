@@ -27,3 +27,19 @@ very cool title generator with combining characters
 
 
 very fancy
+
+
+
+
+
+### 输入
+
+#### json pretifier
+
+
+[StackExchangVim](https://vi.stackexchange.com/questions/16906/how-to-format-json-file-in-vim ":)")
+
+.%! jq 
+把整个文件作为输入，执行 jq 命令
+
+.'<>! jq  也可以用选中模式，变成jq的输入丢进去

@@ -43,4 +43,10 @@ def import_or_install(package):
 ```
 
 
+ 
+# What is __init__.py
+[__init__.py blog]( https://pcarleton.com/2016/09/06/python-init/#:~:text=The%20most%20minimal%20thing%20to,the%20API%20of%20the%20package.":)")
 
+
+local module not found issues
+[SO](https://stackoverflow.com/questions/37233140/python-module-not-found ":)")
