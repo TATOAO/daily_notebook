@@ -10,6 +10,16 @@ git push origin --delete remoteBranchName
 ```
 [Source](https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/ "TEST")
 
+
+``` bash
+
+#To see local branches, run this command:
+git branch
+#To see remote branches, run this command:
+git branch -r
+#To see all local and remote branches, run this command:
+git branch -a
+```
 ## Push remote
 
 
@@ -70,5 +80,12 @@ bundle exec jekyll serve
 
 --
 [Link](https://backlog.com/git-tutorial/cn/stepup/stepup1_3.html "猴子都懂的GIT入门")
+
+
+
+
+## only git clone one subfolder
+
+[SO](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository ":)")
 
 
