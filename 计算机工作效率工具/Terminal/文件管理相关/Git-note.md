@@ -89,3 +89,12 @@ bundle exec jekyll serve
 [SO](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository ":)")
 
 
+
+
+## git grep 搜索 
+
+```
+git grep "xxxxx" $(git rev-list --all)
+git branch -a --contains <target_id>
+```
+
