@@ -10,7 +10,6 @@ git push origin --delete remoteBranchName
 ```
 [Source](https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/ "TEST")
 
-
 ``` bash
 
 #To see local branches, run this command:
@@ -22,10 +21,15 @@ git branch -a
 ```
 ## Push remote
 
-
+[SO copy a branch](https://stackoverflow.com/questions/14998923/how-can-i-copy-the-content-of-a-branch-to-a-new-local-branch ":)")
 ```bash
 # create a new branch
+git branch new_branch
 git checkout -b new_branch
+
+
+git checkout -b new_branch old_branch
+
 # push into remote repository
 git push -u origin the_branch
 ```
@@ -86,15 +90,39 @@ bundle exec jekyll serve
 
 ## only git clone one subfolder
 
-[SO](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository ":)")
+sparseCheckout
+[SO only git clone subfolder](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository ":)")
 
 
 
 
-## git grep 搜索 
+## git grep 搜索
+
+注意, 这个命令需要在和.git同级的目录里执行, 不然可能只会做子目录的搜索
 
 ```
 git grep "xxxxx" $(git rev-list --all)
 git branch -a --contains <target_id>
-```
+
+``` 
+
+
+## Reset Change 
+
+[SO git reset from the remote](https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head ":)")
+
+#### Direct replace the local by the remote
+
+
+git fetch origin 
+git reset --hard origin/master
+
+
+#### save the local to the other branch first
+
+git commit -a -m "saveing to other branch"
+git branch my-saved-work
+
+
+
 
