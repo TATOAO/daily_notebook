@@ -17,13 +17,14 @@ x+      x\+             x+                      Match 1 or more of x
 x{n,m}  x\{n,m}                                 Match n to m of x
 x*?     x\{-}                                   Match 0 or 1 of x, non-greedy
 x+?     x\{-1,}                                 Match 1 or more of x, non-greedy
+*		.*										Greedy
 \b      \< \>                                   Word boundaries
 $n      \n                                      Backreferences for previously grouped matches
 
 
 ------
 
-
+### https://stackoverflow.com/questions/1305853/how-can-i-make-my-match-non-greedy-in-vim
 
 ### https://stackoverflow.com/questions/3101877/find-first-non-matching-line-in-vim
 

@@ -118,6 +118,9 @@ git fetch origin
 git reset --hard origin/master
 
 
+git reset --hard HEAD~1
+git push -f <remote> <branch>
+
 #### save the local to the other branch first
 
 git commit -a -m "saveing to other branch"
