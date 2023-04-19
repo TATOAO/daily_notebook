@@ -75,6 +75,7 @@ docker run -it -p 7500:7500 doccano_helper /bin/bash
 
 // don't remove, use this to restart the container
 docker exec -it ##cotainerid## /bin/bash
+```
 
 
 
@@ -83,4 +84,26 @@ docker exec -it ##cotainerid## /bin/bash
 相当于file sytem in host
 
 docker rm -v redis
+
+
+
+
+
+# COPY
+docker cp xxx container:xxx
+docker cp container:xxx xxx
+
+
+
+
+
+# Docker run exited container, Wake up container
+
+
+docker start #containerid
+docker attach #containerid
+
+
+
+
 
