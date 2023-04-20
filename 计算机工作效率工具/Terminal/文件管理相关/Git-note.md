@@ -158,3 +158,6 @@ pick f7fde4a Change the commit message but push the same commit.
 
 ```
 
+如果已经push, 改了commit message 之后push会有冲突,需要-f一下
+git push origin branch -f
+
