@@ -70,3 +70,29 @@ locals()
 $who
 
 ```
+
+
+## 增加 jupyter notebook kernal
+
+https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084
+
+
+https://marketsplash.com/tutorials/ipython/ipython-kernel-install/
+
+往jupyter 增加kernal 
+
+```
+pip install jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=firstEnv
+```
+
+
+
+## python 版本
+
+```py
+
+import sys
+sys.version_info
+```
