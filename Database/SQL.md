@@ -698,3 +698,41 @@ CALL myproc();
 
 
 
+#### group by a,b,c groupoing sets()
+
+``` sql
+
+group by a,b,c
+grouping sets(
+    (),
+    (a),
+    (a,b),
+    (a,b,c)
+)
+
+```
+
+等价于
+
+```sql
+
+select null as a, null as b, null as c, ...
+group by a,b,c
+
+union all 
+
+select a as a, null as b, null as c, ...
+group by a,b,c
+
+union all 
+
+select a as a, b as b, null as c, ...
+group by a,b,c
+
+union all 
+
+select a as a, b as b, c as c, ...
+group by a,b,c
+```
+
+
