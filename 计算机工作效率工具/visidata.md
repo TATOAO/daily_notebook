@@ -4,6 +4,21 @@
 # visidata 常用快捷键
 
 
+debug 
+
+control + e
+
+## 常用问题
+
+csv deliminator 
+
+vd --csv-delimitor ';' data.csv
+
+但是如果是 \t, \u0001, 直接输入进去会报错，只能接受1个字符，
+
+一个最生硬的解决方法是，在报错的界面点击 control + e， 进入报错信息，然后
+找到对应的csv.py 文件，在python 里面给他手动设置deliminator
+
 
 
 
