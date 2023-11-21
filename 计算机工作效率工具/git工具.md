@@ -135,3 +135,8 @@ git merge # id
 git pull 
 
 ```
+
+
+## git grep
+
+git grep <regexp> $(git rev-list --all)

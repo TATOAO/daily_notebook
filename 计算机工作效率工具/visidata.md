@@ -4,9 +4,10 @@
 # visidata 常用快捷键
 
 
+## 异常处理
 debug 
-
 control + e
+https://jsvine.github.io/intro-to-visidata/advanced/debugging-visidata/
 
 ## 常用问题
 
