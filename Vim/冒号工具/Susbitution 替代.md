@@ -21,3 +21,10 @@ https://vi.stackexchange.com/questions/8621/substitute-second-occurence-on-line
 :%s/^\(.*\)$/\1      \1
 ```
 
+
+
+# countting 
+
+:%s/,//gn
+
+最后 一个 n 命令是指，只告诉多少个match，不实际替换
