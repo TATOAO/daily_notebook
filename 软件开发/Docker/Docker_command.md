@@ -137,5 +137,11 @@ docker attach #containerid
 
 
 
+# Docker config gpu
+
+--gpus 0,1,2
+
+no gpu:
+--runtime=runc
 
 
