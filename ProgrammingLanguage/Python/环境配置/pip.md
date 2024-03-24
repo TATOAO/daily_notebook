@@ -26,6 +26,11 @@ Open source Python packages can be installed from Source Distributions (sdist) o
 ##### pip download wheel
 python -m pip download --only-binary :all: --dest . --no-cache <package_name> 
 
+
+pip download xxxx
+
+离线下载
+
 ##### pip install wheel
 
 pip install some-packge.whl

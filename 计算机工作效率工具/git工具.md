@@ -140,3 +140,9 @@ git pull
 ## git grep
 
 git grep <regexp> $(git rev-list --all)
+
+
+
+## git status 中文乱码 /217/239/203...
+
+git config --global core.quotepath false
