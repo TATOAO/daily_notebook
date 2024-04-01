@@ -146,3 +146,9 @@ git grep <regexp> $(git rev-list --all)
 ## git status 中文乱码 /217/239/203...
 
 git config --global core.quotepath false
+
+
+
+## 保存密码
+
+git config --global credential.helper store
