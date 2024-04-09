@@ -7,6 +7,15 @@ t # Github commant note
 git branch -d localBranchName
 # delete branch remotely
 git push origin --delete remoteBranchName
+
+# rename  -m = modify
+
+git branch -m new_branch_name
+
+
+
+
+
 ```
 [Source](https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/ "TEST")
 
