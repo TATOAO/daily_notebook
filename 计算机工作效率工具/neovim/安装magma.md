@@ -2,7 +2,7 @@
 
 # MagamaInit 找不到kernal
 
-pip install ipykernal
+pip install ipykernel
 
 
 

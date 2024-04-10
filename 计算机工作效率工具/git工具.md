@@ -30,9 +30,16 @@ git push origin --delete remoteBranchName
 ```bash
 # create a new branch
 git checkout -b new_branch
+
 # push into remote repository
 git push -u origin the_branch
+
+# create a branch from commit
+git branch branch_name <commit-hash>
 ```
+
+
+
 
 
 ### get remote info but not pull, including branches 

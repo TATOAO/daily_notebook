@@ -22,3 +22,16 @@ vim - 从 stdin里读取
 
 
 
+
+# redirect & 查看vim的所有key binding, mapping 快捷键
+
+
+[SO](https://stackoverflow.com/questions/7642746/is-there-any-way-to-view-the-currently-mapped-keys-in-vim ":)")
+
+```shell
+:redir! > vim_keys.txt
+:silent verbose map
+:redir END
+```
+
+redir! 就是redirect到指定的文件
