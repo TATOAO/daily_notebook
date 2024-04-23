@@ -47,3 +47,9 @@ python -m pip cache info
 python -m pip cache list [<pattern>] [--format=[human, abspath]]
 python -m pip cache remove <pattern>
 python -m pip cache purge
+
+
+
+#### timeout issue 超时问题
+
+pip install --default-timeout=100 some_packages
