@@ -83,6 +83,15 @@ git push origin --delete fix/authentication
 
 ```
 
+
+#### rename Branch
+
+```bash
+git branch -m new_name
+# or 
+git branch -m old_name new_name
+```
+
 ## Push remote
 
 ``` 
@@ -129,6 +138,9 @@ git config --global gui.encoding utf-8
 git cherry-pick #commit-id#
 
 ```
+
+[cherry-pick but no commit](https://stackoverflow.com/questions/5717026/how-to-cherry-pick-only-changes-to-certain-files ":)")
+git cherry-pick -n <commit>
 
 
 ## git fetch / git pull

@@ -35,3 +35,6 @@ vim - 从 stdin里读取
 ```
 
 redir! 就是redirect到指定的文件
+
+
+
