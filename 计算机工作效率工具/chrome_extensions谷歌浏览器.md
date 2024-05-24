@@ -13,4 +13,3 @@ In visual mode, o focuses the opposite end of the selection (as in vim). This al
 Find (/) works in caret and visual modes.
 
 
-(真的太牛逼了

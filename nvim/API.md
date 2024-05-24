@@ -61,3 +61,24 @@ vim.api.nvim_chan_send(jid, "string")
 vim.fn.chanclose(jid, "stdin")
 vim.fn.jobstop(jid)
 
+
+
+
+## buff 
+
+vim.api.nvim_create_namespace('MaskNamespace' .. i)
+vim.api.nvim_buf_clear_namespace(0, mask_ns_id_list[index], 0, -1)
+vim.api.nvim_buf_add_highlight(0, mask_ns_id_list[index], highlight_group, start_line - 1, start_col - 1, end_col)
+
+vim.schedule(function () xxxx)
+
+local current_win = vim.api.nvim_get_current_win()
+local current_pos = vim.api.nvim_win_get_cursor(current_win)
+local start_line, start_col = unpack(vim.fn.getpos("'<"), 2, 3)
+local end_line, end_col = unpack(vim.fn.getpos("'>"), 2, 3)
+local lines = vim.fn.getline(start_line, end_line)
+
+local attached = vim.api.nvim_buf_attach(buf, false, {
+    on_lines = on_lines
+})
+
