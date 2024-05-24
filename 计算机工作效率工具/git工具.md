@@ -171,3 +171,12 @@ git config --global core.quotepath false
 ## 保存密码
 
 git config --global credential.helper store
+
+
+
+
+## 把以前add进去的文件 不再追踪
+
+git rm --cached <file>
+git rm -r --cached <folder>
+
