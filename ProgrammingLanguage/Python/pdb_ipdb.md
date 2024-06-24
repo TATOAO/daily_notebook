@@ -27,3 +27,11 @@ ll      # show more lines
 
 
 ```
+
+
+# remote pdb
+
+
+[pypi](https://pypi.org/project/remote-pdb/ ":)")
+
+
