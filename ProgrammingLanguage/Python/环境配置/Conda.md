@@ -13,7 +13,7 @@ yml 里面会提供一个名字
 
 
 ## 制定python版本
-conda create -n mypython3 python=3
+conda create -n mypython2 python=3
 
 直接创建：
 ```bash

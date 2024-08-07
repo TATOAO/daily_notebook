@@ -171,6 +171,7 @@ git config --global core.quotepath false
 ## 保存密码
 
 git config --global credential.helper store
+git config --global --unset credential.helper store
 
 
 
@@ -180,3 +181,9 @@ git config --global credential.helper store
 git rm --cached <file>
 git rm -r --cached <folder>
 
+
+
+# submodule
+
+git submodule add -b local https://github.com/TATOAO/myconfig.git nvim_config
+https://github.com/TATOAO/myconfig.git
