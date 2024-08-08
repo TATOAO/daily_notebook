@@ -15,6 +15,11 @@ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 -  中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
 
 
+永久修改
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+确认跟改
+pip config list
 
 ## Wheel 
 
