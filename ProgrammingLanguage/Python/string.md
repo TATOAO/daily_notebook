@@ -61,3 +61,7 @@ f'{value:,}'
 ## percentage 百分号
 
  with "{:. 0%}" as str to format the number as a percentage. To include a specific number of decimal places, use "{:. n%}" 
+
+
+## 数字常用 
+possible = f"{yuan:.2f}元, {yuan:.1f}元, {yuan:.0f}元, {yuan:,.2f}元, {yuan:,.1f}元, {yuan:,.0f}元"
