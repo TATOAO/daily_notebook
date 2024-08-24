@@ -7,6 +7,13 @@ yum install
 microdnf install git
 microdnf install yum
 
+
+
+
+##### wget
+
+
+
 ## ubuntu 
 apt-get install
 apt install

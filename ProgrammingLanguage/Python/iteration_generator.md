@@ -22,3 +22,24 @@ for a in listA:
 
 
 [Tutorial ](https://realpython.com/introduction-to-python-generators/#:~:text=You%20can%20assign%20this%20generator,yielded%20value%20to%20the%20caller. ":)")
+
+
+
+# itertools
+
+
+### zip_longest
+```python
+from itertools.import zip_longest
+
+for x in zip_longest(range(2), range(3)):
+    print(x)
+'''
+0, 0
+1, 1
+None, 2
+'''
+
+```
+
+iter

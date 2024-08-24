@@ -103,6 +103,18 @@ sparseCheckout
 [SO only git clone subfolder](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository ":)")
 
 
+mkdir <repo>
+cd <repo>
+git init
+git remote add -f origin <url>
+
+This creates an empty repository with your remote, and fetches all objects but doesn't check them out. Then do:
+
+git config core.sparseCheckout true
+Now you need to define which files/folders you want to actually check out. This is done by listing them in .git/info/sparse-checkout, eg:
+
+echo "some/dir/" >> .git/info/sparse-checkout
+echo "another/sub/tree" >> .git/info/sparse-checkout
 
 
 ## git grep 搜索

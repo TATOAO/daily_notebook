@@ -65,3 +65,10 @@ f'{value:,}'
 
 ## 数字常用 
 possible = f"{yuan:.2f}元, {yuan:.1f}元, {yuan:.0f}元, {yuan:,.2f}元, {yuan:,.1f}元, {yuan:,.0f}元"
+
+
+## 二进制 binary
+
+"{0:b}".format()
+
+
