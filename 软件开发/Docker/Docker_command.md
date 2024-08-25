@@ -135,6 +135,8 @@ docker cp container:xxx xxx
 docker start #containerid
 docker attach #containerid
 
+# docker save a container into image
+docker commit c3f279d17e0a  svendowideit/testimage:version3
 
 
 # Docker config gpu
