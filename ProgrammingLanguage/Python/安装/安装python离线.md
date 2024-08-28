@@ -27,8 +27,11 @@ cd openssl-1.1.1v
 make
 make install
 
+这两步是8️⃣一些.so依赖关系重建，也是非常关键的两部
 echo "/usr/local/openssl/lib" >> /etc/ld.so.conf.d/openssl-1.1.1.conf
+ldconfig 
 ldconfig -v
+
 
 export PATH=/usr/local/openssl/bin:$PATH
 

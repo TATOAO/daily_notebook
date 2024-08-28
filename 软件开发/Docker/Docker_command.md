@@ -147,3 +147,7 @@ no gpu:
 --runtime=runc
 
 
+
+# Docker remove dangline image 
+
+docker rmi $(docker image ls -f "dangling=true" -q)
