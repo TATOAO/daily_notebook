@@ -90,7 +90,7 @@ docker ps
 docker ps -la
 
 ## remove all existed containers
-docker ps --filter status=existed p1 | xargs docker rm
+docker ps --filter status=exited | awk '{print $1}' | xargs docker rm
 
 ## network bridge
 
@@ -100,6 +100,11 @@ docker network create ## network_name ##
 
 docker run -it --name doccano/doccano -p 8000:8000 --network doccano_network --network-alias doccano_auto_label docanno/doccano
 ``` docker run -it name <container name> --network <bridge> --network-alias <name> <image> ```
+
+
+## docker run without internet 
+docker run --network none -it ubuntu:latest
+--network none
 
 
 ## docker run into bash
