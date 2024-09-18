@@ -42,3 +42,11 @@ https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting?pa
 :let @/ = ""    # clear the search 
 
 ```
+
+
+
+## or 
+/planet\(Awesome\|Terrible\)
+
+
+/\(AAA\|BBB\)
