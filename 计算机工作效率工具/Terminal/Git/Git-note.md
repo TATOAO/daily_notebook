@@ -1,4 +1,4 @@
-t # Github commant note
+# Github commant note
 
 
 ## Branch
@@ -30,6 +30,14 @@ git branch -a
 ```
 ## Push remote
 
+```bash
+# delete branch locally
+git branch -d localBranchName
+# delete branch remotely
+git push origin --delete remoteBranchName
+```
+
+
 [SO copy a branch](https://stackoverflow.com/questions/14998923/how-can-i-copy-the-content-of-a-branch-to-a-new-local-branch ":)")
 ```bash
 # create a new branch
@@ -41,6 +49,8 @@ git checkout -b new_branch old_branch
 
 # push into remote repository
 git push -u origin the_branch
+# create a branch from commit
+git branch branch_name <commit-hash>
 ```
 
 
@@ -147,6 +157,45 @@ git push -f <remote> <branch>
 git commit -a -m "saveing to other branch"
 git branch my-saved-work
 
+## cherry-pick
+
+先git log 获取到对应的commit 的id
+
+从 branch b pick branch a 的commit
+```
+git cherry-pick #commit-id#
+
+```
+
+[cherry-pick but no commit](https://stackoverflow.com/questions/5717026/how-to-cherry-pick-only-changes-to-certain-files ":)")
+git cherry-pick -n <commit>
+
+
+## git fetch / git pull
+
+```
+git fetch 
+git log # 找到对应的新分支的id
+git merge # id 
+
+
+git pull 
+
+
+
+#### Merge
+``` bash
+# merge the current branch to the target 
+git merge github/main --allow-unrelated-histories
+```
+
+
+
+
+## git grep
+
+git grep <regexp> $(git rev-list --all)
+
 
 
 ### 批量修改 git commit message
@@ -184,9 +233,46 @@ git push origin branch -f
 
 
 
+## git status 中文乱码 /217/239/203...
+
+## git 中文乱码问题
+git diff 其实会调用 less
+```
+export LESSCHARSET=utf-8
+git config --global core.quotepath false
+
+git config --global i18n.commitencoding utf-8
+git config --global i18n.logoutputencoding utf-8
+git config --global gui.encoding utf-8
+
+```
+
+未解决git commit之后的返回还是乱码问题。
+
+
+## 保存密码
+
+git config --global credential.helper store
+git config --global --unset credential.helper store
+
+
+## 把以前add进去的文件 不再追踪
+
+git rm --cached <file>
+git rm -r --cached <folder>
+
+
+
 
 
 #  修改上一次的commit 内容
 或者说沿用上一次的commit ， 但是继续修改一些东西
 git commit —amend —no-edit
+
+
+
+# submodule
+
+git submodule add -b local https://github.com/TATOAO/myconfig.git nvim_config
+https://github.com/TATOAO/myconfig.git
 
