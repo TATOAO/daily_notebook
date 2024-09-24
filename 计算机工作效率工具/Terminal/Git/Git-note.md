@@ -12,15 +12,10 @@ git push origin --delete remoteBranchName
 
 git branch -m new_branch_name
 
-
-
-
-
 ```
 [Source](https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/ "TEST")
 
 ``` bash
-
 #To see local branches, run this command:
 git branch
 #To see remote branches, run this command:
@@ -276,3 +271,17 @@ git commit —amend —no-edit
 git submodule add -b local https://github.com/TATOAO/myconfig.git nvim_config
 https://github.com/TATOAO/myconfig.git
 
+
+
+# git lfs
+
+常用操作：
+```
+apt-get install git-lfs
+git lfs install
+git lfs track "*.bin"
+git add .
+git add .gitattributes
+git commit -m 
+git push 
+```
