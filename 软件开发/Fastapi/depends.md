@@ -68,6 +68,9 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 # depends on the decorator 
 
+
+下面这个例子是在header上操作 
+
 ```py
 
 from typing import Annotated

@@ -7,12 +7,17 @@ app = FastAPI()
 
 
 async def common_parameters(q: str | None = None, skip: int = 0, limit: int = 100):
+    """
+    入参的处理 可以用这种依赖的形式
+    """
     return {"q": q, "skip": skip, "limit": limit}
 
 
 
 @app.get("/items/")
 async def read_items(commons: Annotated[dict, Depends(common_parameters)]):
+    """
+    """
     return commons
 
 
@@ -20,3 +25,5 @@ async def read_items(commons: Annotated[dict, Depends(common_parameters)]):
 async def read_users(commons: Annotated[dict, Depends(common_parameters)]):
     return commons
 
+
+# fastapi dev dependency_tutorial1.py
