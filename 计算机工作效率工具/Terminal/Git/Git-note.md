@@ -108,6 +108,7 @@ sparseCheckout
 [SO only git clone subfolder](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository ":)")
 
 
+```bash
 mkdir <repo>
 cd <repo>
 git init
@@ -121,15 +122,15 @@ Now you need to define which files/folders you want to actually check out. This 
 echo "some/dir/" >> .git/info/sparse-checkout
 echo "another/sub/tree" >> .git/info/sparse-checkout
 
+```
 
 ## git grep 搜索
 
 注意, 这个命令需要在和.git同级的目录里执行, 不然可能只会做子目录的搜索
 
-```
+```bash
 git grep "xxxxx" $(git rev-list --all)
 git branch -a --contains <target_id>
-
 ``` 
 
 
@@ -139,6 +140,7 @@ git branch -a --contains <target_id>
 
 #### Direct replace the local by the remote
 
+```bash
 
 git fetch origin 
 git reset --hard origin/master
@@ -146,6 +148,7 @@ git reset --hard origin/master
 
 git reset --hard HEAD~1
 git push -f <remote> <branch>
+```
 
 #### save the local to the other branch first
 
@@ -157,13 +160,20 @@ git branch my-saved-work
 先git log 获取到对应的commit 的id
 
 从 branch b pick branch a 的commit
-```
 git cherry-pick #commit-id#
 
-```
 
 [cherry-pick but no commit](https://stackoverflow.com/questions/5717026/how-to-cherry-pick-only-changes-to-certain-files ":)")
 git cherry-pick -n <commit>
+
+
+## undo 
+
+git revert <commit>
+
+增加一个新的commit 这个commit是 undo/revert 某个commit的操作
+
+
 
 
 ## git fetch / git pull
@@ -263,6 +273,12 @@ git rm -r --cached <folder>
 #  修改上一次的commit 内容
 或者说沿用上一次的commit ， 但是继续修改一些东西
 git commit —amend —no-edit
+
+# 修改n次的commit 内容
+
+git rebase --interactive bbc643cd~
+
+从bbc643cd开始的后面所有的commit
 
 
 
