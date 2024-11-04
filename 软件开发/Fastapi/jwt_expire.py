@@ -20,10 +20,11 @@ to_encode.update({"exp": expire})
 
 encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
+print(encoded_jwt)
 
 for i in range(20):
 
-    payload = jwt.decode(encoded_jwt, SECRET_KEY, algorithms=[ALGORITHM])
+    payload = jwt.decode(encoded_jwt, 'sfewf', algorithms=[ALGORITHM])
     # 超过expire 时间，jwt.decode 会立马报错
     print(encoded_jwt)
     print(payload)
@@ -33,4 +34,4 @@ for i in range(20):
     # jwt.exceptions.ExpiredSignatureError: Signature has expired
 
 
-# cd 软件开发/Fastapi && python jwt_expire.md && cd - 
+# cd 软件开发/Fastapi && python jwt_expire.py && cd - 

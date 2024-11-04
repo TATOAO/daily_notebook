@@ -72,3 +72,25 @@ possible = f"{yuan:.2f}元, {yuan:.1f}元, {yuan:.0f}元, {yuan:,.2f}元, {yuan:
 "{0:b}".format()
 
 
+# print
+
+
+## flush
+
+```python
+
+import time
+
+# Using flush=False (default)
+for i in range(3):
+    print('\r', i, end=" ", flush=False)
+    time.sleep(1)
+
+print("\n")
+
+# Using flush=True
+for i in range(3):
+    print('\r', i, end=" ", flush=True)
+    time.sleep(1)
+
+```
