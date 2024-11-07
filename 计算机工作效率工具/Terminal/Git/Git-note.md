@@ -80,6 +80,30 @@ git merge github/main --allow-unrelated-histories
 ```
 
 
+
+##### Merge with more detail operation
+
+[Link](https://stackoverflow.com/questions/63623581/how-do-i-accept-git-merge-conflicts-from-their-branch-for-only-a-certain-direc ":)")
+
+```bash
+# merge latest master into feature_branch to get those upstream changes
+# from other people into your feature_branch
+git fetch origin master:master
+git checkout feature_branch
+git merge master 
+
+# conflicts result here...
+
+# Keep all changes from `feature_branch` for conflicts in some/dir
+git checkout --ours -- some/dir
+# OR, keep all changes from `master` for conflicts in some/dir
+git checkout --theirs -- some/dir
+
+git add some/dir
+git merge --continue
+```
+
+
 #### Delete Branch
 ``` bash
 # local delete
