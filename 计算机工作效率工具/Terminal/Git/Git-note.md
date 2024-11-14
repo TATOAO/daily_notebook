@@ -298,6 +298,9 @@ git rm -r --cached <folder>
 或者说沿用上一次的commit ， 但是继续修改一些东西
 git commit —amend —no-edit
 
+
+
+
 # 修改n次的commit 内容
 
 git rebase --interactive bbc643cd~

@@ -27,3 +27,25 @@ user = User(**external_data)
 friends
   Field required [type=missing, input_value={'id': 2032, 'name': 'alan'}, input_type=dict]
     For further information visit https://errors.pydantic.dev/2.0.1/v/missing
+
+
+
+# population with Field name
+
+
+```python
+from pydantic import BaseModel, ConfigDict, Field
+
+
+class Resource(BaseModel):
+    name: str = Field(alias="identifier")
+    model_config = ConfigDict(populate_by_name=True)
+
+
+r1 = Resource(name="a name")  # works
+r2 = Resource(identifier="a name")  # works thanks to populate_by_name=True
+
+print(r1.name)  # works
+print(r2.identifier)
+
+```
