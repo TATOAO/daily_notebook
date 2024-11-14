@@ -49,3 +49,19 @@ print(r1.name)  # works
 print(r2.identifier)
 
 ```
+
+# init 
+
+
+
+```python
+class Something(BaseModel)
+
+    now_date: Optional[str] = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+    # will couse the now_date will always equal to the time it "compile"
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        pass
+```
+
