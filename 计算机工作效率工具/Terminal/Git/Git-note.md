@@ -296,7 +296,7 @@ git rm -r --cached <folder>
 
 #  修改上一次的commit 内容
 或者说沿用上一次的commit ， 但是继续修改一些东西
-git commit —amend —no-edit
+git commit —-amend -—no-edit
 
 
 
