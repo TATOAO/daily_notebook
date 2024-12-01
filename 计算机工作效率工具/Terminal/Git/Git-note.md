@@ -328,3 +328,17 @@ git add .gitattributes
 git commit -m 
 git push 
 ```
+
+# git checks parents commits
+
+[chatgpt](https://chatgpt.com/share/674bc2ba-65a0-8000-b9c5-8b6d1d3d3791 ":)")
+
+
+~「连续往前几个提交」。
+^「往前第几个提交」。
+
+git show HEAD^2~3
+
+
+
+
