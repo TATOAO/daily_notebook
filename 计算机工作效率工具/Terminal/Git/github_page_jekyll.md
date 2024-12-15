@@ -8,9 +8,9 @@ gem install bundler jekyll
 
 ```
 # new project
-jekyll add new_project_directory_name
+jekyll new new_project_directory_name
 # existed project
-jekyll add . --force
+jekyll new . --force
 ```
 
 # serve jekyll (dev)
