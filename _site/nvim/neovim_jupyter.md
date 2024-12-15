@@ -1,5 +1,0 @@
-
-
-# neovim jupyter notebook 
-
-## Magma

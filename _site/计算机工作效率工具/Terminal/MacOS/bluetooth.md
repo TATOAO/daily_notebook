@@ -1,7 +1,0 @@
-# bluetooth
-
-```
-blueutil 
-blued
-```
-
