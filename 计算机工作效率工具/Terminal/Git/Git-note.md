@@ -342,3 +342,6 @@ git show HEAD^2~3
 
 
 
+# git editor 
+git config --global core.editor "vim"
+

@@ -33,6 +33,9 @@ github_username:  jekyll
 # theme: minima
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+markdown: kramdown
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
