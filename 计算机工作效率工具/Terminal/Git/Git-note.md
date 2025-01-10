@@ -42,6 +42,10 @@ git checkout -b new_branch
 
 git checkout -b new_branch old_branch
 
+# 当depth=1时候 shallow 可以通过这种方式checkout  
+git ls-remote origin
+git checkout -b new_branch <commit_hash>
+
 # push into remote repository
 git push -u origin the_branch
 # create a branch from commit
