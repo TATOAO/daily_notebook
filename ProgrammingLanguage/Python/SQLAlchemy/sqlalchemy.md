@@ -82,3 +82,10 @@ def records_and_update(table, db_engine, data_row: dict):
                 conn.execute(table.insert().values(data_row))
 ```
 This will by pass the ORM, event listen methods.
+
+
+
+
+
+
+
