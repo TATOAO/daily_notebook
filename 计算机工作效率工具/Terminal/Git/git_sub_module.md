@@ -74,6 +74,7 @@ To convert a directory in your existing Git repository into a Git submodule, fol
   # OR after cloning:
   git submodule update --init --recursive
   ```
+  同步所有的子project
 
 - **Updating the submodule**:
   Changes in the submodule must be committed and pushed separately in its own repository.
