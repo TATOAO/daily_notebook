@@ -268,6 +268,10 @@ git push origin branch -f
 
 ## git status 中文乱码 /217/239/203...
 
+git config --global core.quotepath false
+
+
+
 ## git 中文乱码问题
 git diff 其实会调用 less
 ```
@@ -317,6 +321,8 @@ git rebase --interactive bbc643cd~
 
 git submodule add -b local https://github.com/TATOAO/myconfig.git nvim_config
 https://github.com/TATOAO/myconfig.git
+
+## submodule git pull
 
 
 
