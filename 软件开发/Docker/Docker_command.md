@@ -164,3 +164,14 @@ docker rmi $(docker image ls -f "dangling=true" -q)
 docker run -it --entrypoint /bin/bash image_name
 
 
+
+
+# Docker pack ang load 
+
+```
+docker save -o my_image.tar image_name:tag
+
+docker load -i my_image.tar
+
+```
+

@@ -102,3 +102,45 @@ To convert a directory in your existing Git repository into a Git submodule, fol
 ---
 
 This workflow preserves the directory's history in the submodule while cleaning the main repository. Let me know if you need further clarification!
+
+
+
+
+
+
+
+删除submodule
+
+
+How to Delete a Git Submodule
+I see that you already have a market submodule entry in your .gitmodules file, but it appears to be using a placeholder URL. You also have another submodule at app/market pointing to a real repository.
+To completely delete a Git submodule (in this case, the market submodule), follow these steps:
+Steps to Delete a Git Submodule
+1. Remove the submodule entry from .gitmodules:
+
+2. Remove the submodule from the Git index:
+```bash
+git rm --cached market
+```
+3.Remove the submodule directory:
+```bash
+rm -rf market
+```
+4. Remove the submodule from Git's internal .git/config:
+
+```bash
+git config --remove-section submodule.market
+```
+
+5. Remove the submodule directory from Git's internal storage:
+
+```bash
+rm -rf .git/modules/market
+```
+6. Commit the changes:
+```bash
+git add .gitmodules
+git commit -m "Remove market submodule"
+```
+After completing these steps, the submodule will be completely removed from your repository.
+If you want to fix the issue with the original error message, you should make sure that the URL in your .gitmodules file points to the actual repository you want to use, not a placeholder URL.
