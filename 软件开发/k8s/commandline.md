@@ -1,9 +1,21 @@
 
 
+# 基础配置
+
+默认需要1800
+minikube config set memory 1500
+
+minikube delete
+minikube start
+
 # 从配置文件创建depolyment
 
 kubectl apply -f the-config.yaml
 kubectl delete -f the-config.yaml
+
+使用文件夹内所有的配置
+kubectl apply -f ./a_folder
+
 
 # 查看
 kubectl get nodes
