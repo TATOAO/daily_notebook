@@ -20,17 +20,44 @@ kubectl apply -f ./a_folder
 # 查看
 kubectl get nodes
 kubectl get pod
+kubectl get pod pod_name -o wide
+
 kubectl get services
 kubectl get replicaset
 kubectl get deployment
 
+kubectl get deployment name -o yaml > yaml_with_status.yaml
+
+
 
 # debug
 kubectl logs [pod name]
-dubectl exec -it [pod name] -- bin/bash
+kubectl exec -it [pod name] -- bin/bash
 
 
 # CRUD 
-kubectl create deployment [name]
+kubectl create deployment [name] --image=image [options]
+
+
 kubectl edit deployment [name]
 kubectl delete deployment [name]
+
+
+# example
+kubectl create deployment [name] --image=image
+deployment 就是pods的蓝图
+kubectl get replicaset 可以看到多少个 replicaset 重复的 pods
+pod name = name-replicasetid-podid
+
+
+
+kubectl describe pod [pod_name]
+
+
+
+
+
+
+
+
+
