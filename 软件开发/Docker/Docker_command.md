@@ -175,3 +175,10 @@ docker load -i my_image.tar
 
 ```
 
+
+# Docker tagging / rename images
+
+docker tag old_image_name[tags] new_image_name[tags]
+
+
+
