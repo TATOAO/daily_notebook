@@ -355,3 +355,13 @@ git show HEAD^2~3
 # git editor 
 git config --global core.editor "vim"
 
+
+# git clean
+
+删除没有track的文件
+git clean -fd
+
+-f forces the removal.
+-d removes untracked directories as well.
+
+
