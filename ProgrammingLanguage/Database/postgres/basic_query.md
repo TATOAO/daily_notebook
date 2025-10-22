@@ -21,3 +21,18 @@ show databases;
 or \dt
 
 
+
+# clear
+
+\! clear
+ctrl + L
+
+
+# exit a database
+
+\c
+
+
+
+# delete the whole table 
+
