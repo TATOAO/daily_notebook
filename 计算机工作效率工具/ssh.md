@@ -12,6 +12,7 @@ https://chatgpt.com/share/6746e076-a15c-8000-b8a3-04c84f48391c
 ```bash
 
 ssh-keygen -t rsa -b 4096 -C "My Work Key"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 # create the private key in ~/.ssh/id_rsa
 
 ssh-copy-id -p $port_num username@server_ip
