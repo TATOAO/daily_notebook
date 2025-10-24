@@ -164,6 +164,10 @@ docker rmi $(docker image ls -f "dangling=true" -q)
 docker run -it --entrypoint /bin/bash image_name
 
 
+for docker compose 
+
+
+docker compose -f docker/docker-compose.yml run --entrypoint /bin/bash <app-name>
 
 
 # Docker pack ang load 
