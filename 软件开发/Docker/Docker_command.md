@@ -185,4 +185,9 @@ docker load -i my_image.tar
 docker tag old_image_name[tags] new_image_name[tags]
 
 
+untag: 
+docker image rm --no-prune my_image:1.1
+--no-prune ensure not remove the image itself
+
+
 
