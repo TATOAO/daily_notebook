@@ -365,3 +365,15 @@ git clean -fd
 -d removes untracked directories as well.
 
 
+# git config name and email
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+```
+
+

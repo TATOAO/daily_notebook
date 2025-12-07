@@ -80,3 +80,7 @@ chmod 600 ~/.ssh/authorized_keys
 
 
 
+# SSH 隧道转发和反向
+
+
+
